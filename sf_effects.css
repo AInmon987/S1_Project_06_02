@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 2
+   
+   Save your Fork Graphic Design Styles
+   Author: Austin Inmon
+   Date:   11.9.18
+
+   Filename: sf_effects.css
+
+*/
+
+/* Body Header Styles */
+/* The rule is for the body and its a text shadow and is for the left and right borders.  */
+body {
+    box-shadow: rgb(51, 51, 51) 10px 10px 25px, rgb(51, 51, 51) -10px 10px 25px;
+}
+
+
+
+/* Navigation Tabs List Styles */
+/* The rule is for the background image that have an id of tabs and that is in the navigation that is in the header and in the body. The rule is for the image to be centered both horizontally and vertically.  */
+body>header nav.tabs {
+    background-image: url(sf_back1.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+
+}
+
+/* The rule is for the list items, that is in the navigation that is in the header and the body. The rule is transforming the tabs into a 3D look.  */
+body>header nav.tabs li {
+    transform: perspective(50px) rotateX(20deg);
+
+}
+
+/* The rule is to make the tabs hover color white when the mouse hovers over the links.  */
+body>header nav.tabs li:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+
+
+/* Left Section Styles */
+/* The rule is for the navigations that are on the left side of the website and they are vertical navigations. The rule creates a border and the border radius to make the edges round.  */
+section#left nav.vertical {
+    border: 1px solid rgb(20, 167, 170);
+    border-radius: 25px;
+}
+
+/* The top eges of the navigation bars are in primary headings so to make the edges round there has to be a border radius of 25 pixels 25 pixels and then no pixels for the bottom since they already are round.  */
+section#left nav.vertical h1 {
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+/* Center Article Styles */
+/* This rule is for the image on the webpage that is center and the rule is giving a radial gradient, border and rounded edges.  */
+section#center article {
+    background: radial-gradient(white 30%, rgb(151, 151, 151));
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 30px;
+    box-shadow: rgb(51, 51, 51) 10px 10px 20px, rgb(51, 51, 51) -10px 10px 20px;
+}
+
+
+
+/* Blockquote Styles */
+/* the rule is for the blockquotes and the rule is giving the quotes an background image and has round repeat and the sie is 100 percent.  */
+blockquote {
+    background-image: url(sf_speech.png);
+    background-repeat: round;
+    background-size: 100%;
+    -webkit-filter: drop-shadow(5px 5px 10px) rgb(51, 51, 51);
+    filter: drop-shadow(5px 5px 10px);
+}
+
+/* The rule is for the images of the people and the rule is making the images round not squares.  */
+cite img {
+    border-radius: 50%;
+}
